@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/* ESTILOS GLOBALES */
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ESTILOS DEL HEADER Y DIVISION DEL HEADER */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498DB;
+    padding: 10px 0 10px 0;
+}
+
+.columna {
+    flex: 1;
+    text-align: center;
+}
+
+/* ESTILOS DEL LOGO */
+.logo img {
+    height: 70px;
+    transition: all 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+/* ESTILOS DEL MENU PRINCIPAL */
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.nav-links li:hover {
+    border-bottom: solid 2px #2C3E50;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 130%;
+}
+
+.nav-links li a:hover {
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+/* ESTILOS DEL MENU TRADUCCION LENGUAJES*/
+.nav-lang li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.nav-lang li:hover {
+    transform: scale(1.2);
+    border: 1px solid #FFFFE0;
+    padding-top: 4px;
+}
+
+.nav-lang {
+    margin-right: 10px;  
+}
+
+/* ESTILOS DEL BOTON HAMBURGUESA */
+.burger-btn {
+    display: none;
+}
+
+/* ESTILOS PARA HACER LA PAGINA RESPONSIVE*/
+@media screen and (max-width: 1345px) {
+
+    /* ESTILOS DEL BOTON HAMBURGUESA */
+    .burger-btn {
+        font-size: 1.5em;
+        cursor: pointer;
+        color: white;
+        border: white 1px solid;
+        width: 40px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .burger-btn:hover {
+        background-color: #c6ecff;
+        color: #1b3039;
+        border: #1b3039 1px solid;
+    }
+
+    /* ESTILOS DEL MENU PRINCIPAL */
+    .nav-links {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: #21618C;
+        z-index: 1;
+        display: none;
+    }
+
+    .nav-links li a:hover {
+        color: #F2F3F4;
+        font-weight: normal;
+        border: none;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+        margin: 0 0 0 -37px;
+    }
+
+    .nav-links li:hover {
+        background-color: #5DADE2;
+        margin: 5px 5px 0 -35px;
+    }
+
+    .nav-links.active {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-top: 1px solid #1b3039;
+        padding-bottom: 5px;
+    }
+}
