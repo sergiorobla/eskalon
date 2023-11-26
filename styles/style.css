@@ -59,12 +59,11 @@
     list-style: none;
     display: inline-block;
     margin-top: 15px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .nav-lang li:hover {
     transform: scale(1.2);
-    border: 1px solid #FFFFE0;
     padding-top: 4px;
 }
 
@@ -136,5 +135,9 @@
         margin: 0 auto;
         border-top: 1px solid #1b3039;
         padding-bottom: 5px;
+    }
+
+    .nav-lang {
+        margin-left: -50px;
     }
 }
