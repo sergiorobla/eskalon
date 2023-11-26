@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Roboto:wght@100;300;900&display=swap');
 
 /* ESTILOS GLOBALES */
 * {
@@ -52,6 +52,7 @@
 .nav-links li a:hover {
     color: #2C3E50;
     font-weight: bold;
+    transition: all 0.3s;
 }
 
 /* ESTILOS DEL MENU TRADUCCION LENGUAJES*/
@@ -103,11 +104,43 @@
     text-transform: uppercase;
     color: #21618C;
     font-weight: 900;
-    font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
-    border: 3px solid black;
-    background-color: #3498DB;
     padding: 5px;
+    transition: all 0.5s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ESTILOS PARA EL TEXTO */
+
+.text-index {
+    margin: 10px 35px 10px 35px;
+    max-width: 600px;
+    text-align: justify;
+    font-size: 110%;
+}
+
+.text-index p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-index h1, .text-index h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.text-index h1 {
+    font-size: 180%;
+    margin-top: 8%;
+}
+/* ESTILOS DEL FOOTER*/
+footer {
+    margin: 10px 10px 10px 2%;
+}
+footer a {
+    color:#21618C;
+    text-decoration: none;
 }
 /* ESTILOS PARA HACER LA PAGINA RESPONSIVE*/
 @media screen and (max-width: 3000px) {
@@ -209,13 +242,23 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .slider-title {
+        font-size: 2em;
+    }
+
+    .text-index {
+        max-width: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .slider-title {
         font-size: 1.5em;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .slider-title {
         font-size: 1em;
     }
