@@ -111,10 +111,13 @@
 }
 
 /* ESTILOS PARA EL TEXTO */
-
+section {
+    display: flex;
+}
 .text-index {
-    margin: 10px 35px 10px 35px;
-    max-width: 600px;
+    flex: 1;
+    margin: 10px 4.5% 10px 18%;
+    max-width: 40%;
     text-align: justify;
     font-size: 110%;
 }
@@ -128,15 +131,23 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
+    
 
 }
 .text-index h1 {
     font-size: 180%;
     margin-top: 8%;
+    font-weight: bold;
+}
+
+.image-index img{
+    margin: 120px 50px 50px 100px;
+    width: 300px;
 }
 /* ESTILOS DEL FOOTER*/
 footer {
-    margin: 10px 10px 10px 2%;
+    margin: 10px 10px 10px 4.5%;
 }
 footer a {
     color:#21618C;
@@ -152,6 +163,9 @@ footer a {
 @media screen and (max-width: 2275px) {
     .slider-title {
         font-size: 5.5em;
+    }
+
+    .image-index {
     }
 }
 
@@ -234,6 +248,24 @@ footer a {
     .slider-title {
         font-size: 3.5em;
     }
+
+    section {
+        display: block;
+    }
+
+    .text-index {
+        max-width: none;
+        margin: 10px 4.5% 10px 4.5%;
+    }
+
+    .image-index {
+        margin-top: 50px;
+        text-align: center; 
+    }
+
+    .image-index img {
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 975px) {
@@ -246,10 +278,6 @@ footer a {
     .slider-title {
         font-size: 2em;
     }
-
-    .text-index {
-        max-width: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -261,5 +289,9 @@ footer a {
 @media screen and (max-width: 400px) {
     .slider-title {
         font-size: 1em;
+    }
+
+    .image-index img{
+        width: 250px;
     }
 }
