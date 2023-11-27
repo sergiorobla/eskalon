@@ -164,9 +164,6 @@ footer a {
     .slider-title {
         font-size: 5.5em;
     }
-
-    .image-index {
-    }
 }
 
 @media screen and (max-width: 2000px) {
@@ -265,6 +262,7 @@ footer a {
 
     .image-index img {
         margin: auto;
+        width: 290px;
     }
 }
 
@@ -272,17 +270,29 @@ footer a {
     .slider-title {
         font-size: 2.5em;
     }
+
+    .image-index img{
+        width: 280px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .slider-title {
         font-size: 2em;
     }
+
+    .image-index img{
+        width: 270px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .slider-title {
         font-size: 1.5em;
+    }
+
+    .image-index img{
+        width: 260px;
     }
 }
 
