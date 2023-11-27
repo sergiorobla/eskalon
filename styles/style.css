@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* ESTILOS DEL HEADER Y DIVISION DEL HEADER */
+/* ESTILOS PARA EL HEADER Y DIVISION DEL HEADER */
 .contenedor {
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-/* ESTILOS DEL LOGO */
+/* ESTILOS PARA EL LOGO */
 .logo img {
     height: 70px;
     transition: all 0.3s;
@@ -30,7 +30,7 @@
     transform: scale(1.2);
 }
 
-/* ESTILOS DEL MENU PRINCIPAL */
+/* ESTILOS PARA EL MENU PRINCIPAL */
 .nav-links li {
     list-style: none;
     display: inline-block;
@@ -55,7 +55,7 @@
     transition: all 0.3s;
 }
 
-/* ESTILOS DEL MENU TRADUCCION LENGUAJES*/
+/* ESTILOS PARA EL MENU TRADUCCION LENGUAJES*/
 .nav-lang li {
     list-style: none;
     display: inline-block;
@@ -72,7 +72,7 @@
     margin-right: 10px;  
 }
 
-/* ESTILOS DEL BOTON HAMBURGUESA */
+/* ESTILOS PARA EL BOTON HAMBURGUESA */
 .burger-btn {
     display: none;
 }
@@ -110,7 +110,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ESTILOS PARA EL TEXTO */
+/* ESTILOS PARA EL TEXTO DEL INDEX */
 .index-container {
     display: flex;
 }
@@ -139,11 +139,54 @@
     font-size: 180%;
     margin-top: 8%;
     font-weight: bold;
+    color: #21618C;
 }
 
+/* ESTILOS PARA LA IMAGEN DEL INDEX */
 .image-index img{
     margin: 120px 50px 50px 100px;
     width: 300px;
+}
+
+/* ESTILOS PARA LOS PUNTOS DEL INDEX */
+.point-index {
+    display: flex;
+    margin: 0 300px 0 300px;
+}
+
+.point-index h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 130%;
+    color: #21618C;
+}
+
+.point-index p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.point-index form {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.point-index button {
+    display: inline-block;
+    background-color: #3498DB;
+    color: #F2F3F4;
+    font-size: 140%;
+    border: #3498DB solid 1px;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.point-index button:hover {
+    background-color: #21618C;
+    border: #21618C solid 1px;
 }
 /* ESTILOS DEL FOOTER*/
 footer {
@@ -153,6 +196,7 @@ footer a {
     color:#21618C;
     text-decoration: none;
 }
+
 /* ESTILOS PARA HACER LA PAGINA RESPONSIVE*/
 @media screen and (max-width: 3000px) {
     .slider-title {
@@ -263,6 +307,11 @@ footer a {
     .image-index img {
         margin: auto;
         width: 290px;
+    }
+
+    .point-index {
+        display: block;
+        margin: 0 4.5% 0 4.5%;
     }
 }
 
