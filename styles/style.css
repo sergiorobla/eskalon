@@ -34,7 +34,7 @@
 .nav-links li {
     list-style: none;
     display: inline-block;
-    padding: 0 25px;
+    padding: 0 20px;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -142,28 +142,33 @@
 /* ESTILOS PARA LA IMAGEN DEL INDEX */
 .image-index img{
     margin: 50px 170px 50px 50px;
-    width: 500px;
+    width: 550px;
     border-radius: 5%;
 }
 
 /* ESTILOS PARA LOS PUNTOS DEL INDEX */
 .point-index {
     display: flex;
-    margin: 0 300px 0 300px;
+    margin: 0 150px 0 150px;
+}
+
+.point-index div {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .point-index h1 {
     text-align: center;
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 130%;
+    font-size: 120%;
     color: #21618C;
 }
 
 .point-index p{
-    text-align: justify;
+    text-align: center;
     margin-top: 10px;
-    margin-right: 20px;
 }
 
 .point-index form {
@@ -310,6 +315,10 @@ footer a {
     .point-index {
         display: block;
         margin: 0 4.5% 0 4.5%;
+    }
+
+    .point-index div {
+        margin-right: 0;
     }
 }
 
