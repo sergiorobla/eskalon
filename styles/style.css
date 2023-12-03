@@ -101,12 +101,11 @@
     text-align: center;
     z-index: 1;
     text-transform: uppercase;
-    color: #21618C;
+    color: #c6ecff;
     font-weight: 900;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
     padding: 5px;
     transition: all 0.5s;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* ESTILOS PARA EL TEXTO DEL INDEX */
@@ -115,8 +114,7 @@
 }
 .text-index {
     flex: 1;
-    margin: 10px 4.5% 10px 18%;
-    max-width: 40%;
+    margin: 10px 4.5% 10px 10%;
     text-align: justify;
     font-size: 110%;
 }
@@ -126,7 +124,7 @@
     margin-bottom: 20px;
 }
 
-.text-index h1, .text-index h4 {
+.text-index h1, .text-index h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -143,8 +141,9 @@
 
 /* ESTILOS PARA LA IMAGEN DEL INDEX */
 .image-index img{
-    margin: 120px 50px 50px 100px;
-    width: 300px;
+    margin: 50px 170px 50px 50px;
+    width: 500px;
+    border-radius: 5%;
 }
 
 /* ESTILOS PARA LOS PUNTOS DEL INDEX */
@@ -325,6 +324,10 @@ footer a {
 }
 
 @media screen and (max-width: 800px) {
+    .slider-container {
+        display: none;
+    }
+
     .slider-title {
         font-size: 2em;
     }
