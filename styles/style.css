@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Roboto:wght@100;300;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Be+Vietnam+Pro:wght@200;400;700&family=Nanum+Gothic&display=swap');
 /* ESTILOS GLOBALES */
 * {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* ESTILOS PARA EL HEADER Y DIVISION DEL HEADER */
@@ -76,24 +75,16 @@
     display: none;
 }
 
-/* ESTILOS PARA EL SLIDER */
-.slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+/* ESTILOS PARA LA INTRO */
+.intro-container {
+    background-image: url('../static/images/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 87vh;
 }
 
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slider img {
-    width: 100%;
-    height: auto;
-}
-
-.slider-title {
+.intro-container h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,11 +92,13 @@
     text-align: center;
     z-index: 1;
     text-transform: uppercase;
-    color: #c6ecff;
-    font-weight: 900;
+    color: white;
+    font-weight: 700;
+    font-size: 10vh;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
     padding: 5px;
     transition: all 0.5s;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 /* ESTILOS PARA EL TEXTO DEL INDEX */
@@ -115,7 +108,7 @@
 .text-index {
     flex: 1;
     margin: 10px 4.5% 10px 10%;
-    text-align: justify;
+    text-align:left;
     font-size: 110%;
 }
 
@@ -125,10 +118,10 @@
 }
 
 .text-index h1, .text-index h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 200;
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
     
 
 }
@@ -146,24 +139,30 @@
     border-radius: 5%;
 }
 
+.image-index2 img {
+    display: none;
+}
+
 /* ESTILOS PARA LOS PUNTOS DEL INDEX */
 .point-index {
     display: flex;
-    margin: 0 150px 0 150px;
+    margin: 0 30vh 0 30vh;
 }
 
 .point-index div {
-    text-align: center;
-    margin-right: 50px;
-    margin-left: 50px;
+    max-width: 100vh;
+}
+
+.point-index .div2 {
+    margin: 0 4vh 0 4vh;
 }
 
 .point-index h1 {
     text-align: center;
     margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 120%;
+    font-size: 190%;
     color: #21618C;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .point-index p{
@@ -171,26 +170,6 @@
     margin-top: 10px;
 }
 
-.point-index form {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.point-index button {
-    display: inline-block;
-    background-color: #3498DB;
-    color: #F2F3F4;
-    font-size: 140%;
-    border: #3498DB solid 1px;
-    border-radius: 3px;
-    padding: 10px;
-}
-
-.point-index button:hover {
-    background-color: #21618C;
-    border: #21618C solid 1px;
-}
 /* ESTILOS DEL FOOTER*/
 footer {
     margin: 10px 10px 10px 4.5%;
@@ -201,33 +180,7 @@ footer a {
 }
 
 /* ESTILOS PARA HACER LA PAGINA RESPONSIVE*/
-@media screen and (max-width: 3000px) {
-    .slider-title {
-        font-size: 6em;
-    }
-}
-
-@media screen and (max-width: 2275px) {
-    .slider-title {
-        font-size: 5.5em;
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    .slider-title {
-        font-size: 5em;
-    }
-}
-
-@media screen and (max-width: 1875px) {
-    .slider-title {
-        font-size: 4.5em;
-    }
-}
-
-@media screen and (max-width: 1345px) {
-
-    /* ESTILOS DEL BOTON HAMBURGUESA */
+@media screen and (max-width: 1430px) {
     .burger-btn {
         font-size: 1.5em;
         cursor: pointer;
@@ -247,21 +200,23 @@ footer a {
         border: #1b3039 1px solid;
     }
 
-    /* ESTILOS DEL MENU PRINCIPAL */
     .nav-links {
+        display: none;
         position: absolute;
         top: 90px;
         left: 0;
         width: 100%;
         background-color: #21618C;
         z-index: 2;
-        display: none;
     }
 
-    .nav-links li a:hover {
-        color: #F2F3F4;
-        font-weight: normal;
-        border: none;
+    .nav-links.active {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-top: 1px solid #1b3039;
+        padding-bottom: 5px;
     }
 
     .nav-links li {
@@ -274,23 +229,17 @@ footer a {
     .nav-links li:hover {
         background-color: #5DADE2;
         margin: 5px 5px 0 -35px;
+        border-bottom: none;
     }
 
-    .nav-links.active {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        border-top: 1px solid #1b3039;
-        padding-bottom: 5px;
+    .nav-links li a:hover {
+        color: #F2F3F4;
+        font-weight: normal;
+        border: none;
     }
 
     .nav-lang {
         margin-left: -50px;
-    }
-
-    .slider-title {
-        font-size: 3.5em;
     }
     
     .index-container {
@@ -312,56 +261,58 @@ footer a {
         width: 290px;
     }
 
-    .point-index {
-        display: block;
-        margin: 0 4.5% 0 4.5%;
-    }
-
-    .point-index div {
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 975px) {
-    .slider-title {
-        font-size: 2.5em;
-    }
-
-    .image-index img{
-        width: 280px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .slider-container {
+    .image-index img {
         display: none;
     }
 
-    .slider-title {
-        font-size: 2em;
+    .image-index2 {
+        margin: -1% 5% 0 5%;
+    }
+    .image-index2 img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
     }
 
-    .image-index img{
-        width: 270px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .slider-title {
-        font-size: 1.5em;
-    }
-
-    .image-index img{
-        width: 260px;
+    .point-index {
+        margin: 0 20vh 0 20vh;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .slider-title {
-        font-size: 1em;
+@media screen and (max-width: 1252px) {
+    .point-index {
+        margin: 0 10vh 0 10vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .intro-container h1 {
+        font-size: 8vh;
+    }
+    
+    .point-index {
+        display: block;
+        margin: 0 5vh 0 5vh;
     }
 
-    .image-index img{
-        width: 250px;
+    .point-index div {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .intro-container h1 {
+        font-size: 6vh;
+    }
+
+    .point-index {
+        display: block;
+        margin: 0 2vh 0 2vh;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .intro-container h1 {
+        font-size: 5vh;
     }
 }
